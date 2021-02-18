@@ -1,0 +1,16 @@
+
+  {
+    "name": "album",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:client && npm run setup:server && npm run build:client",
+      "setup:client": "cd album.client && npm i",
+      "setup:server": "cd album.server && npm i",
+      "build:client": "npm run --prefix album.client build",
+      "start": "node album.server/index.js"
+    },
+    "engines": {
+      "node": "^14.15.4"
+    }
+  }
+  
