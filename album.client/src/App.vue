@@ -153,7 +153,6 @@ export default {
       },
       async createImage() {
         try {
-          console.log(state.newImage)
           const i = new Image()
           i.src = state.newImage.img
           let orientation = ''

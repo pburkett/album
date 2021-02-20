@@ -43,7 +43,6 @@ export default {
 
     })
     onMounted(async() => {
-      console.log(useRoute().params)
       imagesService.get(useRoute().params.page)
     })
     return {
